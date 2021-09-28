@@ -68,7 +68,6 @@ lofreqlist=alllist[23:44]
 platypuslist=alllist[45:66]
 strelka2list=alllist[67:88]
 
-
 SNP_4method=list()
 SNPname<-c('090202body','090202head',
            'SCNT1','SCNT2','SCNT3','SCNT4','SCNT5',
@@ -227,7 +226,6 @@ plotfile='./fig/4method_overlap_filter_indel_sum_dotplot_wilcoxlabel.pdf'
 ggsave(plotfile, plot=p1, dpi = 600,width = 10, height = 6)
 plotfile='./fig/4method_overlap_filter_indel_sum_dotplot_wilcoxlabel.png'
 ggsave(plotfile, plot=p1, dpi = 600,width = 10, height = 6)
-
 
 # ######delly SV  ---------------------------------------------------------
 rm(list=ls())
