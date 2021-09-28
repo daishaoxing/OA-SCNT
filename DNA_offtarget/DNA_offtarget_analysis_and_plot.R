@@ -34,7 +34,6 @@ ggsave(plotfile, plot=p, dpi = 600,width = 5, height = 5)
 plotfile='./fig/GATK_raw_count_dp40_barplot_SCNTvsdonor_cells_wilcox.png'
 ggsave(plotfile, plot=p, dpi = 600,width = 5, height = 5)
 
-
 ##The samples of embryos (Promega #A1125)  vs. tissues. (QIAGEN, #150343).
 library(ggplot2)
 library(ggpubr)
@@ -85,7 +84,6 @@ ggsave(plotfile, plot=p, dpi = 600,width = 5, height = 5)
 plotfile='./fig/GATK_raw_count_dp40_barplot_Status_wilcox.png'
 ggsave(plotfile, plot=p, dpi = 600,width = 5, height = 5)
 
-
 # on-target editing from the WGS results ----------------------------------
 rm(list=ls())
 library(ggplot2)
@@ -116,7 +114,6 @@ plotfile='./fig/on_target_editing_rate.png'
 ggsave(plotfile, plot=p, dpi = 600,width = 8, height = 5)
 plotfile='./fig/on_target_editing_rate.pdf'
 ggsave(plotfile, plot=p, dpi = 600,width = 8, height = 5)
-
 
 
 # venn plot ---------------------------------------------------------------
@@ -155,7 +152,6 @@ for (i in samplelist){
   venn(x, snames = sname,ellipse = TRUE, zcolor = "style", cexil = 1, cexsn = 0.8,ilcs=1.5)
   dev.off()
 }
-
 
 # change count heatmap ----------------------------------------------------
 rm(list=ls())
