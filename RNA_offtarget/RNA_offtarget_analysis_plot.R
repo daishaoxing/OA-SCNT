@@ -133,7 +133,6 @@ ggsave(plotfile, plot=p, dpi = 600,width = 10, height = 5)
 plotfile='./fig/RNA_SNP.mean_proportion.heatmap.pdf'
 ggsave(plotfile, plot=p, dpi = 600,width = 10, height = 5)
 
-
 # #########boxplot --------------------------------------------------------
 rm(list=ls())
 library(ggplot2)
@@ -176,7 +175,6 @@ pcmean<-mean(pcnumber)
 ncmean<-mean(ncnumber)
 pcse<-sd(pcnumber)/sqrt(length(pcnumber))
 ncse<-sd(ncnumber)/sqrt(length(ncnumber))
-
 
 ######v2
 breaks<-pretty(range(mydata$number1), 8)
@@ -516,7 +514,6 @@ for (i in c("PC1","PC2","PC3","PC4","PC5")) {
   plotfile=paste('./fig/GATK_',i,'_Jitter.png',sep = '')
   ggsave(plotfile, plot=p, dpi = 600,width = 15, height = 10)
 }
-
 
 # # ggseqlogo######Load the required packages -----------------------------
 # ggseqlogo######Load the required packages
